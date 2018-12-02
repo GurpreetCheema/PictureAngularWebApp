@@ -5,16 +5,17 @@ import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 
 import { AppComponent } from './app.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    AlertModule
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
